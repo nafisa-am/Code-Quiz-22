@@ -9,13 +9,13 @@
   </head>
   <body>
   <header>
-    <a id=js-view-leaderboard>Show Highscore <i class="fas fa-hand-point-left fa-lg"></i>
+    <a id=scoreboard>Show Highscore<i class="fas fa-hand-point-right"></i>
     </i></a> <div class="remaining-time remaining-time--visible">
-        Time: 90 <div id="js-time-remaining"></div>
+        Time: 90 <div id="time-remaining"></div>
     </div>
 </header>
 <main>
-    <section id="js-section-intro" class="active">
+    <section id="intro" class="active">
         <h1> Coding Quiz Challenge</h1>
         <p>Answer the code related questions in the quiz within the time limit.</p>
         <p>Keep in mind that incorrect answers will penalize your time by ten seconds.</p>
@@ -24,11 +24,11 @@
 </section>
 
 <!-- START: HIGHSCORES -->
-<section id="js-section-highscore-input" class="phase-enter-initials"></section>
+<section id="highscore-input" class="phase-enter-initials"></section>
 <!-- END: HIGHSCORES -->
 
 <!-- START: LEADERBOARD -->
-<section id="js-section-leaderboard">
+<section id="leaderboard-section">
     <h1>Highscores</h1>
     <div class="highscores-list"></div>
     <div class="highsore-actions">
@@ -36,13 +36,13 @@
         <button class="highscore-actions__clear button button__primary">Clear highscores</button>
     </div>
 </section>
-<!-- END: LEADERgit addBOARD -->
+<!-- END: LEADERBOARD -->
 <!-- START: QUESTION INPUTS -->
-<div id="js-section-questions" class="section">
+<div id="questions-section" class="section">
     <div id="questions"></div>
 <!-- END: QUESTION INPUTS -->
 </main>
 <script src="./Assets/script.js"></script>
-    <script src="./Assets/questions.js"></script>
+    <script src="./q&a.js"></script>
  </body>
 </html>

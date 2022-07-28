@@ -9,15 +9,18 @@
 header {
   background-color: var(--pewter-blue);
   text-align: end;
-  padding: 5px;
   font-family: "Courier New", Courier, monospace;
   border: 1px solid black;
-  margin: 10px;
+  padding: 20px;
 }
 
 body {
   background-color: var(--ghost-white);
   font-family: "Courier New", Courier, monospace;
+}
+
+main {
+  align-items: center;
 }
 
 section,
@@ -82,8 +85,8 @@ section.active,
 
 .questions-list span {
   padding: 10px;
-  background-color: var(--pewter-blue);
-  border: radius 10px;
+  background-color: var(--baby-blue-eyes-2);
+  border-radius: 10px;
   width: 100%;
   color: black;
 }
@@ -99,5 +102,5 @@ section.active,
 }
 
 .phase-enter-initials input {
-  margin-left: 5px;
+  margin-left: 10px;
 }
