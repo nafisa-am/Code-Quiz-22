@@ -10,8 +10,8 @@
   <body>
   <header>
     <a id=scoreboard>Show Highscore<i class="fas fa-hand-point-right"></i>
-    </i></a> <div class="remaining-time remaining-time--visible">
-        Time: 90 <div id="time-remaining"></div>
+    </i></a> <div class="remaining-time see-remaining-time">
+        Time:  <div id="time-remaining"></div>
     </div>
 </header>
 <main>
@@ -20,7 +20,7 @@
         <p>Answer the code related questions in the quiz within the time limit.</p>
         <p>Keep in mind that incorrect answers will penalize your time by ten seconds.</p>
         <p>Best of Luck!</p>
-    <button id="js-quiz-start" class="button button--primary">Start Quiz</button>
+    <button id="start-quiz" class="first-button">Start Quiz</button>
 </section>
 
 <!-- START: HIGHSCORES -->
@@ -32,8 +32,8 @@
     <h1>Highscores</h1>
     <div class="highscores-list"></div>
     <div class="highsore-actions">
-        <button class="highscore-actions__back button button__primary">Go back</button>
-        <button class="highscore-actions__clear button button__primary">Clear highscores</button>
+        <button class="highscore-back  button__primary">Go back</button>
+        <button class="highscore-clear  button__primary">Clear highscores</button>
     </div>
 </section>
 <!-- END: LEADERBOARD -->

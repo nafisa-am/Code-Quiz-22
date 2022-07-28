@@ -1,4 +1,4 @@
-const startBtn = document.getElementById("js-quiz-start");
+const startBtn = document.getElementById("start-quiz");
 
 // To start the game //
 let game = null;
@@ -15,21 +15,17 @@ document.querySelector("#scoreboard").addEventListener("click", () => {
   }
 });
 
-document
-  .querySelector(".highscore-actions__back")
-  .addEventListener("click", () => {
-    document.querySelector("#leaderboard-section").classList.remove("active");
-    document.querySelector("#intro").classList.add("active");
-  });
+document.querySelector(".highscore-back").addEventListener("click", () => {
+  document.querySelector("#leaderboard-section").classList.remove("active");
+  document.querySelector("#intro").classList.add("active");
+});
 
-document
-  .querySelector(".highscore-actions__clear")
-  .addEventListener("click", () => {
-    if (confirm("Do you really want to remove all your highscores?")) {
-      HighScores.clear();
-      HighScores.viewHighScores();
-    }
-  });
+document.querySelector(".highscore-clear").addEventListener("click", () => {
+  if (confirm("Do you really want to remove all your highscores?")) {
+    HighScores.clear();
+    HighScores.viewHighScores();
+  }
+});
 
 startBtn.addEventListener("click", () => {
   game.startQuiz(90, true);
@@ -45,7 +41,7 @@ class Timer {
 
   start() {
     document
-      .querySelector(".remaining-time--visible")
+      .querySelector(".see-remaining-time")
       .classList.add("js-is-counting");
 
     if (this.timer === null) {
@@ -81,7 +77,7 @@ class Timer {
     clearTimeout(this.timer);
     this.timer = null;
     document
-      .querySelector(".remaining-time--visible")
+      .querySelector(".see-remaining-time")
       .classList.remove("js-is-counting");
   }
 }
@@ -143,7 +139,7 @@ class Game {
   }
 
   generateInputScreen(score) {
-    let template = `<h1>All done</h1>
+    let template = `<h1>Quiz Completed</h1>
               <p>Your final score is ${score ? score : 0}</p>
               <form id="js-highscore-submit" name="highscore-submit">
                   <input type="hidden" name="score" value="${score}"">
@@ -258,7 +254,7 @@ class Game {
   }
 
   verifyAnswer(questionNo, answer) {
-    // correct answer
+    // Correct answers
     if (
       questions[questionNo].answer === questions[questionNo].options[answer]
     ) {
