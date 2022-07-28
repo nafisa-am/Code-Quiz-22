@@ -15,7 +15,6 @@ When you load the page click on the 'start quiz' button. This will then direct y
 
 # Screenshots
 
-
 <img width="1440" alt="Screenshot 2022-07-28 at 22 54 38" src="https://user-images.githubusercontent.com/108237958/181644449-594ed7cd-bb3d-49f6-a0fb-186c9de2c9e6.png">
 
 <img width="1440" alt="Screenshot 2022-07-28 at 22 54 48" src="https://user-images.githubusercontent.com/108237958/181644559-794077cd-59cb-4574-b69b-dc56c6aec372.png">
@@ -26,8 +25,7 @@ When you load the page click on the 'start quiz' button. This will then direct y
 
 <img width="971" alt="Screenshot 2022-07-28 at 16 52 30" src="https://user-images.githubusercontent.com/108237958/181644625-1687b443-d87a-47b4-8741-98b93e220567.png">
 
-
 # Links
 
-Deployed URL -
-Github URL -
+Deployed URL - https://nafisa-am.github.io/Code-Quiz-22/
+Github URL - https://github.com/nafisa-am/Code-Quiz-22.git
